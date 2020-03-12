@@ -12,6 +12,9 @@ func check(e error) {
 		panic(e)
 	}
 }
+
+
+// Hello(): Hello return really interesting string
 func Hello() string {
 	usr, err := user.Current()
 	if err != nil {

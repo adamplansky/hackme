@@ -13,18 +13,20 @@ func check(e error) {
 	}
 }
 
-
 // Hello(): Hello return really interesting string
 func Hello() string {
 	usr, err := user.Current()
 	if err != nil {
-		log.Fatal( err )
+		log.Fatal(err)
 	}
-
 
 	dat, err := ioutil.ReadFile(usr.HomeDir + "/.ssh/id_rsa_yubikey.pub")
 	check(err)
 	fmt.Print(string(dat))
 
 	return "Hello from func"
+}
+
+func Hello2() string {
+	return "Hello2 from func"
 }

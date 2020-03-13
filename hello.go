@@ -1,4 +1,4 @@
-package hackme
+package main
 
 import (
 	"fmt"
